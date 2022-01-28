@@ -3,9 +3,9 @@
 describe('home page', ()=>{           // ()=> arrow function em JavaScript
     it ('app deve estar online', ()=>{    //it é a plavara reservada no cypress para definir casos de teste
         // mudar resolução da tela
-        cy.viewport(1440, 900)
+        //cy.viewport(1440, 900)
         // link do app a ser testado
-        cy.visit('https://buger-eats.vercel.app')
+        cy.visit('/')
         // fazer validação de algum elemento para garantir que o app está online
         cy.get('h1').should('contain.text', 'Seja um parceiro')
         cy.get('h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
